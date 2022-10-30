@@ -1,0 +1,400 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+      <ion-title  class="title">
+        Computer - Laptup
+        <ion-icon name="star-half-outline" position="start" class="star"></ion-icon>
+
+      </ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card>
+    <ion-card-header class="cardTitle">
+      <ion-card-title>Cátalogo</ion-card-title>
+      
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="CPU Gamer" src="../../assets/icon/cpu.jpg" />
+          </ion-thumbnail>
+          <ion-button  class="buttoCatalogo"id="open-modal" expand="block">CPU Gamer</ion-button>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="audifonos" src="../../assets/icon/audifonos.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal2" expand="block">Audifonos</ion-button>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="teclado" src="../../assets/icon/teclado.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal3" expand="block">Teclado Gamer</ion-button>
+         
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="mouse" src="../../assets/icon/mouse.jpg"/>
+          </ion-thumbnail>
+          <ion-button id="open-modal4" expand="block">Mouse</ion-button>
+       
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="mousepad" src="../../assets/icon/mousepad.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal5" expand="block">Mouse Pad</ion-button>
+       
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="laptop" src="../../assets/icon/laptop.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal6" expand="block">Laptop</ion-button>
+          
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="impresora" src="../../assets/icon/impresora.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal7" expand="block">Impresora</ion-button>
+          
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="monitor" src="../../assets/icon/monitor.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal8" expand="block">Monitor</ion-button>
+          
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="silla" src="../../assets/icon/silla.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal9" expand="block">Silla Gamer</ion-button>
+       
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="tablet" src="../../assets/icon/tablet.jpg" />
+          </ion-thumbnail>
+          <ion-button id="open-modal10" expand="block">Tablet</ion-button>
+  
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/cpu.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">CPU Gamer</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Computadora de escritorio Core i9 12900K DDR4 64GB Geforce RTX 3080 
+            Ti GDDR6X 12GB nuevo oem mejor calidad pc para.
+            Precio: $3,199.00.
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+
+  <ion-modal #modal2 trigger="open-modal2">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal2.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/audifonos.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Audifonos</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            BENGOO G9000 Auriculares estéreo para juegos para PS4 PC
+             Xbox One PS5 Controller, auriculares sobre la oreja con
+              cancelación de ruido con micrófono, luz LED, sonido envolvente 
+              de graves, orejeras de memoria suave para portátil Mac Nintendo NES Games.
+            Precio: $35.00. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+
+  <ion-modal #modal3 trigger="open-modal3">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal3.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/teclado.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Teclado Gamer</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Teclado para juegos RedThunder 60%, miniteclado 
+            ultracompacto con retroiluminación RGB, silencioso, 
+            ergonómico, resistente al agua, teclado mecánico para
+             PC, MAC, PS4, Xbox ONE.
+            Precio: $24.00. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal #modal4 trigger="open-modal4">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal4.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/mouse.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Mouse </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Ratón para juegos Lenovo Legion M200 RGB, 
+            diseño de 5 botones, hasta 2400 DPI con 
+            interruptor de 4 niveles DPI, retroiluminación 
+            circulante de 7 colores, cable trenzado, 
+            comodidad para jugar, fácil de configurar, GX30P93886, negro.
+            Precio: $28.50. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+      
+    </ng-template>
+  </ion-modal>
+
+
+  <ion-modal #modal5 trigger="open-modal5">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal5.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/mousepad.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Mouse Pad </ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Superficie para juegos SteelSeries QcK - 
+            Tela pequeña - Alfombrilla de ratón de todos los tiempos 
+            - Optimizada para sensores de juego.
+            Precio: $14.50. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+     
+      </ion-content>
+      
+    </ng-template>
+  </ion-modal>
+
+
+  <ion-modal #modal6 trigger="open-modal6">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal6.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/laptop.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Laptop</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            2021 OEM factory laptop 15 .6" Windows 10 Intel N3350/N3450 
+            /6GB+64GB SSD Quad Core slim MAX Support 1TB/2TB Disk.
+            Precio: $223.00. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <ion-modal #modal7 trigger="open-modal7">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal7.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/impresora.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Impresora</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Impresora Epson 3210 - Blanca.
+            Precio: $304.00. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <ion-modal #modal8 trigger="open-modal8">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal8.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/monitor.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Monitor</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Fpc Monitor Asus Proart Pa248qv 24.1 Ips 1610 Wuxga.
+            Precio: $484.99. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <ion-modal #modal9 trigger="open-modal9">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal9.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/silla.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Silla Gamer</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            Silla Gamer Foxlab Ergonomica Gama Alta Con Apoya Brazos 4d.
+            Precio: $245.00. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  
+  <ion-modal #modal10 trigger="open-modal10">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title >Producto</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="light" (click)="modal10.dismiss()">
+              <ion-icon name="close-circle-outline" class="buttonClose"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-card>
+          <img alt="Silhouette of mountains" src="../../assets/icon/tablet.jpg" />
+          <ion-card-header>
+            <ion-card-title class="cardTitle">Tablet</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content class="cardContent">
+            PANTALLA HELLOPRO FHD TABLET ANDROID 11 DE 8 PULGADAS.
+            Precio: $300.00. 
+          </ion-card-content>
+          <ion-button (click)="presentActionSheet()">Open</ion-button>
+        </ion-card>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+  
+</ion-content>
